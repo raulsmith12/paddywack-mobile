@@ -7,6 +7,7 @@ import { Gallery } from './screens/Gallery';
 import { Join } from './screens/Join';
 import { Shop } from './screens/Shop';
 import { Item } from './screens/Item';
+import { GalleryImage } from './screens/GalleryImage';
 
 const Stack = createNativeStackNavigator();
 
@@ -69,6 +70,16 @@ export default function App() {
           component={Item}
           options={{
             title: 'Paddy Wack Gifts Store',
+            headerStyle: { backgroundColor: '#922667' },
+            headerTintColor: '#fff',
+            headerTitleStyle: { fontWeight: 'bold'}
+          }}
+        />
+        <Stack.Screen
+          name="GalleryImage"
+          component={GalleryImage}
+          options={{
+            title: 'Paddy Wack Gifts Gallery',
             headerStyle: { backgroundColor: '#922667' },
             headerTintColor: '#fff',
             headerTitleStyle: { fontWeight: 'bold'}
