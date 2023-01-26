@@ -14,7 +14,7 @@ export const Join = ({ navigation }) => {
     const submitForm = () => {
         axios({
             method: 'post',
-            url: 'https://backend.paddywackgifts.com/public/api/contacts',
+            url: 'https://backend.paddywackgifts.com/public/api/joins',
             headers: { 'content-type': 'application/json' },
             data: {
                 'name': customerName,
